@@ -1,8 +1,7 @@
 {
-  "name": "swagger-express",
-  "description": "Document your express rest api by jsDoc or yaml.",
-  "version": "1.0.4",
-  "author": "fliptoo <fliptoo.studio@gmail.com>, sposmen <sposmen@gmail.com>",
+  "name": "starter-express-swagger-ui",
+  "description": "express rest api by jsDoc or yaml.",
+  "version": "1.0.1",
   "main": "./index",
   "dependencies": {
     "express": "3.5.1",
@@ -10,7 +9,14 @@
     "doctrine": "*",
     "js-yaml": "~3.13.1",
     "coffee-script": "*",
-    "async": "~0.2.7"
+    "async": "~0.2.7",
+    "acorn": ">=5.7.4",
+    "cookie-signature": ">=1.0.4",
+    "negotiator": ">=0.6.1",
+    "fresh": ">=0.5.2",
+    "mime": ">=1.4.1",
+    "send": ">=0.11.1"
+
   },
   "devDependencies": {
     "jade": "*",
@@ -18,17 +24,5 @@
   },
   "scripts": {
     "test": "jshint --config jshint.cfg $(find . -name *.js | grep -v './node_modules')"
-  },
-  "keywords": [
-    "swagger",
-    "swagger-ui",
-    "express",
-    "api",
-    "jsdoc",
-    "yml",
-    "yaml",
-    "coffee-script",
-    "restful"
-  ],
-  "repository": "git://github.com/fliptoo/swagger-express"
+  }  
 }
